@@ -5,10 +5,10 @@ import { NotFoundException } from '@nestjs/common';
 
 @Controller('messages')
 export class MessagesController {
-  messageService: MessageService;
+  //messageService: MessageService;
 
-  constructor(service: MessageService){
-    this.messageService= service;
+  constructor(public messageService: MessageService){
+    //this.messageService= service;
   }
 
   @Get()
